@@ -1,0 +1,42 @@
+  <!-- header -->
+  <app-header></app-header>
+<app-admin-dash-board></app-admin-dash-board>
+
+<p>admin-invoicenumber works!</p>
+<p style="margin-top: 150px;"></p>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-3 search">
+     <h5>Search Your Product</h5>
+      <form (ngSubmit)="search()">
+        <div class="mb-3">
+          <label for="id" class="form-label">Search By Id: </label>
+          <input type="number" class="form-control" placeholder="Type your id" id="id" name="id" [(ngModel)]="id">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+.
+    </div>
+    <div class="col-9">
+
+      <table class="table table-striped">
+        <tr>
+          <th> Id </th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>{{searchid.id}}</td>
+          <td>{{searchid.name}}</td>
+          <td>{{searchid.description}}</td>
+          <td>{{searchid.price}}</td>
+        </tr>
+      </table>
+    </div>
+
+
+  </div>
+</div>

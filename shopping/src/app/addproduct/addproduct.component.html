@@ -1,0 +1,36 @@
+
+
+<!-- header -->
+<app-header></app-header>
+<!-- <p>addproduct works!</p> -->
+<section class="container">
+  <!-- productid, productname, productbrand, producctategory, productunitprice, productstock -->
+    <form (ngSubmit)="getStudentsave()">
+        <div class="mb-3">
+          <label for="productid" class="form-label">ID</label>
+          <input type="text" class="form-control" id="productid" name="productid" [(ngModel)]="productid" >
+        
+        </div>
+        <div class="mb-3">
+          <label for="productname" class="form-label">Name</label>
+          <input type="text" class="form-control" id="productname" name="productname" [(ngModel)]="productname">
+        </div>
+        <div class="mb-3">
+            <label for="productbrand" class="form-label">Brand</label>
+            <input type="text" class="form-control" id="productbrand" name="productbrand" [(ngModel)]="productbrand">
+          </div>
+          <div class="mb-3">
+            <label for="producctategory" class="form-label">Category</label>
+            <input type="text" class="form-control" id="producctategory" name="producctategory" [(ngModel)]="producctategory">
+          </div>     
+          <div class="mb-3">
+            <label for="productunitprice" class="form-label">Unitprice</label>
+            <input type="text" class="form-control" id="productunitprice" name="productunitprice" [(ngModel)]="productunitprice">
+          </div> 
+          <div class="mb-3">
+            <label for="productstock" class="form-label">Stock</label>
+            <input type="text" class="form-control" id="productstock" name="productstock" [(ngModel)]="productstock">
+          </div>      
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</section>
